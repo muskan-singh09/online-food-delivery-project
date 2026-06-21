@@ -1,0 +1,154 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#fff8f0;
+}
+
+/* Welcome Page */
+
+#welcome{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(
+45deg,
+orange,
+red
+);
+color:white;
+}
+
+/* Arrow Animation */
+
+#startBtn{
+margin-top:30px;
+padding:20px;
+border:none;
+border-radius:50%;
+font-size:30px;
+cursor:pointer;
+animation:bounce 1s infinite;
+}
+
+/* // Animation button ko jump effect dene ke liye */
+
+@keyframes bounce{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+#mainPage{
+display:none;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:white;
+box-shadow:0 2px 10px gray;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:100px;
+background:linear-gradient(
+orange,
+tomato
+);
+color:white;
+}
+
+/* Restaurant Cards */
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.card{
+width:250px;
+padding:30px;
+background:white;
+border-radius:20px;
+box-shadow:0 5px 15px gray;
+transition:0.5s;
+}
+
+/* // Hover effect card ko zoom karne ke liye */
+
+.card:hover{
+transform:scale(1.1);
+}
+
+.order{
+text-align:center;
+padding:50px;
+}
+
+input,
+select{
+width:300px;
+padding:15px;
+margin:10px;
+}
+
+button{
+padding:15px 30px;
+background:orange;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+#history{
+width:80%;
+margin:auto;
+padding:20px;
+}
+
+.record{
+background:white;
+padding:20px;
+margin:15px;
+box-shadow:0 3px 10px gray;
+border-radius:15px;
+}
